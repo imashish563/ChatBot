@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chatbot</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/image-gallery.css">
+	<link rel="stylesheet" href="css/typeIndicator.css">
+	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon.ico" type="image/x-icon">
+	
+  </head>
+  <body>
+      <div id="center-text">
+    <h1>Chat Bot UI</h1>
+    <p>Description goes here </p>
+	<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pptModal">Open Modal</button>-->
+  </div> 
+      <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+            <i class="material-icons">chat</i>
+    </div>
+    <div class="chat-box">
+        <div class="chat-box-header">
+            
+          <span class="chat-box-face">  <i class="material-icons">face</i></span>
+      ChatBot
+      <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+    </div>
+          <div id="chat-area">
+            <div id="start-screen">
+            </div>
+          </div>
+
+      <div id="compose-area">
+<!--        <textarea id="composer" class="text-input" type="text" autofocus="autofocus"></textarea>-->
+          <input type="text" id="composer" class="text-input" autofocus="autofocus" placeholder="Write a message..."/>
+        
+          <button id="sendButton"><i class="material-icons">send</i></button>
+       
+      </div>
+      
+    </div>
+	
+	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="video-panel" class="video-panel">
+		<video id="myVideo" controls></video>
+	</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+	
+	<div class="modal fade" id="pptModal" role="dialog">
+    <div class="modal-dialog ppt-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+			
+			<div class="outer-container">
+				<div class="container portfolio-page">
+					<div class="row">
+						
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .outer-container -->
+		   </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/listener.js"></script>
+    <script src="js/thingsTheBotSays.js"></script>
+    <script src="js/chatEngine.js"></script>
+    <script src="js/botChat.js"></script>
+    <script src="js/userChat.js"></script>
+    <script src="js/send.js"></script>
+  </body>
+</html>
